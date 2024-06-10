@@ -1,0 +1,126 @@
+    body {
+        font-family: 'Outfit', sans-serif;
+    background-image: url('../imagens/BRUNO-NIVER\ 3\ 2024-06-08\ at\ 10.30.43\ \(1\).jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    }
+
+ .cabecalho{
+    text-align: center;
+    padding: 60px 0;
+ }
+
+.cabecalho h1 {
+    color: #f1ecff;
+    font-size: 45px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.Familia-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.lista-familia {
+    width:  1200px;
+    height:  1500px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: #ffffff;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #8351fe;
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    padding: 12px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.cartao .imagem-familia {
+    width: 100%;
+    max-height: 1080px 1203;
+}
+
+.cartao .nome{
+    background-color: rgba(179, 177, 186, 0,7);
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.cartao .declaracoes{
+    background-color: rgba(255, 255, 255, 0,8);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .declaracoes .titulo{
+    background-color: #333333;
+    font-size: 25px;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.cartao .declaracoes .texto{
+    font-size: 35px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 150px;
+    overflow-y: auto;
+    color: #ffffff;
+}
+
+.cartao.fundo-1{
+    background-image:url('../imagens/FUNDO-1\ \ 2024-06-08\ at\ 11.05.45.jpeg') no-repeat;
+}
+
+.cartao.fundo-2{
+    background-image:url('../imagens/FUNDO-2\ 2024-06-08\ at\ 11.08.41.jpeg') no-repeat;
+}
+
+.cartao.fundo-3{
+    background-image:url('../imagens/FUNDO-PRINCIPAL\ 2024-06-08\ at\ 11.07.59.jpeg') no-repeat;
+}
+
+.cartao.fundo-4{
+    background-image:url('../imagens/BRUNO-NIVER\ Especial\ \ 2024-06-04\ at\ 16.18.04.jpeg') no-repeat;
+}
